@@ -73,6 +73,10 @@ img {
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
   background-color: var(--light-color);
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+}
+.header-logo{
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -97,7 +101,6 @@ img {
 .hdr-connect {
   display: flex;
   margin-left: auto;
-  text-align: center;
 }
 .hdr-tel {
   margin-left: 50px;
@@ -119,16 +122,21 @@ img {
 .nav {
   color: var(--chapter-color);
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-header {
+  display: flex;
+  align-items: center;
   color: var(--description-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.email-icon,
-.phone-icon {
+.contacts-icon {
   object-fit: contain;
   object-position: center;
   margin-right: 10px;
-  fill: var(--description-color);
+  fill: currentColor;
 }
 .current,
 .nav:hover,
@@ -145,19 +153,24 @@ img {
   padding-bottom: 94px;
 }
 
-/*MAIN разобраться с фоном в герое*/
+/*MAIN*/
 
 .hero {
   background: var(--background-color);
   text-align: center;
   padding: 200px 0;
+  max-width: 1600px;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero.jpg);
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-content {
+
 }
 .hero-text {
   font-weight: 900;
