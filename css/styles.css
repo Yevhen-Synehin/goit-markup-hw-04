@@ -162,6 +162,8 @@ img {
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
@@ -170,9 +172,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.hero-content {
-
 }
 .hero-text {
   font-weight: 900;
@@ -205,15 +204,6 @@ img {
 .btn-order:hover {
   background: var(--btn-order-hov-color);
   box-shadow: 0px 4px 4px var(--btn-order-shad-color);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--light-color);
 }
 .supremacy {
   font-size: 14px;
@@ -236,9 +226,11 @@ img {
   color: var(--description-color);
 }
 .supr-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background-color: var(--team-color);
-  padding: 25px 100px;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -256,6 +248,7 @@ img {
   display: flex;
 }
 .team-item {
+  background-color: var(--light-color);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -295,13 +288,13 @@ img {
 }
 .social-link{
   display: flex;
+  border-radius: 50%;
   padding: 12px;
   fill: var(--social-icon);
 }
 .social-link:hover,
 .social-link:focus{
   background-color: var(--logo-color);
-  border-radius: 75%;
   fill: var(--light-color);
 }
 .clients-list{
@@ -437,6 +430,8 @@ color: var(--light-color);
 .btn-filter:focus{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
+  background: var(--logo-color);
+  color: var(--light-color);
 }
 .filter-list {
   display: flex;
